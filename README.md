@@ -1,5 +1,5 @@
 # Visualization-COVID-19
-<a href="https://gh920.github.io/Visualization-COVID-19/">Click Here To See the Webpage<br><img src="images/preview"></a>
+<a href="https://gh920.github.io/Visualization-COVID-19/">Click Here To See the Webpage<br><img src="images/preview.png"></a>
 ## Abstract
 COVID-19 is the abbreviation of Coronavirus Disease 2019. It is an infectious respiratory disease caused by a novel coronavirus, which was first detected in Wuhan City, Hubei Province of China. The World Health Organization (WHO) has alerted a Public Health Emergency of International Concern (PHEIC) for COVID-19 outbreak. Everyone in the world cares a lot about this health emergency event. Up to 1/May/2020, there are over 3,300,000 confirmed cases over the world. This project uses visualizations to help to understand the spread of COVID-19.
 
