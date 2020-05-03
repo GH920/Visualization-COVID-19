@@ -1,0 +1,149 @@
+
+.header {
+    position: relative;
+    height: 220px;
+    background: url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+}
+
+#navbar {
+    z-index: 10;
+}
+
+nav .navbar-brand {
+    display: inline-block;
+    margin-top: -5px;
+    float: left;
+}
+
+nav h4 {
+    display: inline;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+nav #navbar-name1 {
+    border-right: 1px solid gray;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+nav h4 a, a:hover, a:visited, a:focus, a:active {
+    color: black;
+    text-decoration: none; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navtag {
+    float: right;
+    /* overflow: hidden; */
+}
+
+.navtag a {
+    float: inherit;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid rgb(220,220,220);
+}
+
+.dropdown {
+    float: right;
+    /* overflow: hidden; */
+}
+
+.dropdown .dropbtn {
+    float: right;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-right: 1px solid rgb(220,220,220);
+    /* border-left: 1px solid rgb(220,220,220); */
+}
+
+.navtag a:hover, .dropdown:hover .dropbtn {
+    color: white;
+    background-color: rgba(95,158,160,0.75);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 51px;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: black;
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+.sticky + #page_wrapper {
+    padding-top: 100px;
+}
+
+
+
+#content {
+    position: relative;
+    text-align: left;
+    float: left;
+    width: 60%;
+    min-width: 700px;
+    padding: 0px 0 15px 30px;
+    margin: 30px;
+    /* background-color: rgba(255, 255, 255,0.7);
+    border: 1px solid rgb(180, 180, 180); */
+}
+
+#page_wrapper {
+    padding-top: 30px;
+}
+
+
+#chart-area, #chart-area2 {
+    display: inline-block;
+}
+
+#footer {
+    height: 35px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    background: rgb(245,245,245);
+    color: #aaaaaa;
+    border-top: 1px solid rgb(220,220,220);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 80%;
+}

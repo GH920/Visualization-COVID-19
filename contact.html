@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>COVID-19 Visualization</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom styling -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <nav class="navbar navbar-default" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img id="logo" src="images/virus.png" style="width: 30px;"></a>
+            <span><h4><a id="navbar-name1">COVID-19</a><a>Visualization and Comparison</a></h4>
+                <div class="navtag">
+                    <div class="dropdown">
+                        <button class="dropbtn">Topics 
+                            <i class="fa fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="confirmedcases.html">Confirmed Cases</a>
+                            <a href="dailygrowth.html">Daily Growth</a>
+                            <a href="drrate.html">Deaths/Recovered Rate</a>
+                            <a href="casechina.html">Case Analysis: China</a>
+                        </div>
+                    </div> 
+                    <a href="contact.html">Contact</a>
+                    <a href="https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset">Dataset</a>
+                    <a href="index.html">Home</a>
+                </div>            
+            </span>
+        </div>
+    </nav>
+
+    
+    <!-- Bootstrap grid setup -->
+    <div id="page_wrapper">
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class='tableauPlaceholder' id='viz1588314769206' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;my&#47;mybio&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='mybio&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;my&#47;mybio&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1588314769206');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+            </div>
+            <div id="main" style="width: 600px;height:400px;"></div>
+        </div> <!-- content -->
+        
+    </div><!-- page_wrapper -->
+
+    <div id="footer">
+        Copyright &copy; 
+        <script>
+            var d = new Date();
+            document.write(d.getFullYear());
+        </script>
+        | <a href="https://www.linkedin.com/in/gaofenghuang/">Gaofeng Huang</a>
+        | <a href="https://github.com/GH920">GitHub</a>
+    </div><!-- footer -->
+
+<!-- Sticky navbar -->
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+</script>
+<!-- External JS libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.csv.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/echarts.js"></script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts-en.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-gl/dist/echarts-gl.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat/dist/ecStat.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/dataTool.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/china.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/map/js/world.js"></script>
+<script type="text/javascript" src="https://api.map.baidu.com/getscript?v=2.0&ak=OYTRxnbOeTDj7Aw8SNztUooY0kWFgTHj"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/extension/bmap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
